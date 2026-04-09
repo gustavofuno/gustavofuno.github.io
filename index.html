@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gustavo Funo — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">GF</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#tennis">Tennis</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-image-col">
+      <img src="pictures/IMG_4751.jpeg" alt="Gustavo Funo" class="hero-img" />
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Gustavo<br />Funo</h1>
+        <p class="hero-tagline">
+          Software engineer. Tennis player.<br />
+          Car enthusiast. Built in Brazil, studying in Wisconsin.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <h2>Building the future,<br />one line at a time.</h2>
+          <p>
+            I'm Gustavo Funo, a 19-year-old Computer Science student from Brazil,
+            currently pursuing my <strong>Bachelor's and Master's degrees</strong> at
+            <strong>Concordia University Wisconsin</strong>. I'm passionate about
+            software engineering, competitive tennis, and pushing limits — both on
+            the court and behind the keyboard.
+          </p>
+          <div class="about-tags">
+            <span class="tag">🇧🇷 From Brazil</span>
+            <span class="tag">📍 Wisconsin, USA</span>
+            <span class="tag">🎓 B.S. + M.S. Computer Science</span>
+            <span class="tag">🎾 Concordia Falcons Tennis</span>
+          </div>
+          <div class="about-flags">
+            <img src="https://flagcdn.com/w40/br.png" alt="Brazil" class="flag" />
+            <span class="flag-arrow">→</span>
+            <img src="https://flagcdn.com/w40/us.png" alt="USA" class="flag" />
+          </div>
+        </div>
+        <div class="about-photo fade-in" style="transition-delay: 0.15s">
+          <div class="photo-frame">
+            <img
+              src="pictures/WhatsApp%20Image%202026-04-07%20at%2021.22.00.jpeg"
+              alt="Gustavo Funo"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title fade-in">Skills &amp; Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <p>Data structures, algorithms, scripting &amp; automation</p>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">☕</div>
+          <h3>Java</h3>
+          <p>Object-oriented programming &amp; backend development</p>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML &amp; CSS</h3>
+          <p>Responsive web design &amp; modern UI development</p>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🎮</div>
+          <h3>C# &amp; Unity</h3>
+          <p>Game development &amp; real-time interactive applications</p>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🤖</div>
+          <h3>Claude Code</h3>
+          <p>AI-assisted development &amp; intelligent agent workflows</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label">Experience</div>
+      <h2 class="section-title fade-in">Where I've Been</h2>
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Gym Assistant</h3>
+              <span class="timeline-badge current">Current</span>
+            </div>
+            <p class="timeline-company">Concordia University Wisconsin</p>
+            <p class="timeline-desc">
+              Supporting university gym operations while developing key professional
+              skills in a fast-paced team environment, managing facilities and
+              assisting students daily.
+            </p>
+            <div class="timeline-skills">
+              <span class="skill-tag">Leadership</span>
+              <span class="skill-tag">Management</span>
+              <span class="skill-tag">Communication</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item fade-in" style="transition-delay: 0.15s">
+          <div class="timeline-dot seeking-dot"></div>
+          <div class="timeline-content seeking-content">
+            <div class="timeline-header">
+              <h3>Software Engineering Intern</h3>
+              <span class="timeline-badge open">Open to Opportunities</span>
+            </div>
+            <p class="timeline-company">Your Company?</p>
+            <p class="timeline-desc">
+              Actively seeking internship opportunities in software engineering where
+              I can contribute meaningfully, learn fast, and grow as a developer.
+            </p>
+            <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">What I've Built</div>
+      <h2 class="section-title fade-in">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <div class="project-top">
+            <span class="project-lang python">Python</span>
+          </div>
+          <h3>BlackJack Game</h3>
+          <p>
+            A fully functional Blackjack card game built in Python — complete with
+            game logic, hand evaluation, scoring, and a clean terminal interface.
+            Originally built to play with friends.
+          </p>
+          <div class="project-footer">
+            <span class="project-tag">Game Logic</span>
+            <span class="project-tag">Terminal UI</span>
+            <span class="project-tag">OOP</span>
+          </div>
+        </div>
+        <div class="project-card fade-in" style="transition-delay: 0.12s">
+          <div class="project-top">
+            <span class="project-lang unity">Unity / C#</span>
+            <span class="dev-badge">In Development</span>
+          </div>
+          <h3>First-Person Shooter</h3>
+          <p>
+            A 3D first-person shooter built in Unity with C#. Currently developing
+            core mechanics including player movement, combat systems, and immersive
+            level design.
+          </p>
+          <div class="project-footer">
+            <span class="project-tag">Unity</span>
+            <span class="project-tag">C#</span>
+            <span class="project-tag">3D Game Dev</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TENNIS ============ -->
+  <section class="tennis section" id="tennis">
+    <div class="container">
+      <div class="tennis-grid">
+        <div class="tennis-photo fade-in">
+          <img
+            src="pictures/IMG_4752.jpeg"
+            alt="Gustavo Funo celebrating on the tennis court for the Concordia Falcons"
+          />
+        </div>
+        <div class="tennis-text fade-in" style="transition-delay: 0.15s">
+          <div class="section-label">On The Court</div>
+          <h2>Concordia Falcons<br />Tennis Team</h2>
+          <p class="tennis-level">Semi-Professional Level</p>
+          <p>
+            Competing for the <strong>Concordia University Wisconsin Falcons</strong>
+            tennis team has been one of the most defining chapters of my life. Tennis
+            isn't just a sport — it's a discipline that has shaped who I am as a
+            person and as a professional.
+          </p>
+          <p>
+            Every match taught me how to stay composed under pressure, how to bounce
+            back from failure, and how to keep pushing when things get hard. Those
+            are the exact same qualities I bring to every line of code I write.
+          </p>
+          <div class="tennis-values">
+            <div class="value">
+              <span class="value-icon">🎯</span>
+              <span>Discipline</span>
+            </div>
+            <div class="value">
+              <span class="value-icon">💪</span>
+              <span>Resilience</span>
+            </div>
+            <div class="value">
+              <span class="value-icon">🧠</span>
+              <span>Focus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOBBIES ============ -->
+  <section class="hobbies section" id="hobbies">
+    <div class="container">
+      <div class="section-label">Beyond The Code</div>
+      <h2 class="section-title fade-in">What I Love</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card fade-in">
+          <div class="hobby-photo">
+            <img src="pictures/WhatsApp%20Image%202026-04-08%20at%2019.58.38.jpeg" alt="Gaming with friends" />
+          </div>
+          <div class="hobby-body">
+            <div class="hobby-icon">🎮</div>
+            <h3>Gaming</h3>
+            <p>
+              From competitive multiplayer to story-driven RPGs, gaming fuels my
+              creativity and my passion for building interactive experiences.
+            </p>
+          </div>
+        </div>
+        <div class="hobby-card fade-in" style="transition-delay: 0.1s">
+          <div class="hobby-photo">
+            <img src="pictures/WhatsApp%20Image%202026-04-08%20at%2019.59.41.jpeg" alt="Car enthusiast" />
+          </div>
+          <div class="hobby-body">
+            <div class="hobby-icon">🚗</div>
+            <h3>Cars</h3>
+            <p>
+              A true car enthusiast — I love the engineering, the design, and the
+              culture. Cars are where art and technology collide perfectly.
+            </p>
+          </div>
+        </div>
+        <div class="hobby-card fade-in" style="transition-delay: 0.2s">
+          <div class="hobby-photo">
+            <img src="pictures/WhatsApp%20Image%202026-04-08%20at%2020.01.43.jpeg" alt="Tennis on clay" />
+          </div>
+          <div class="hobby-body">
+            <div class="hobby-icon">🎾</div>
+            <h3>Tennis</h3>
+            <p>
+              Semi-professional tennis player competing for the Concordia Falcons.
+              The court is where I learned discipline, focus, and resilience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHOTOS ============ -->
+  <section class="photos section" id="photos">
+    <div class="container">
+      <div class="section-label">My World</div>
+      <h2 class="section-title fade-in">Family &amp; Friends</h2>
+      <div class="photos-grid">
+        <div class="photo-col fade-in">
+          <div class="photo-card">
+            <img
+              src="pictures/WhatsApp%20Image%202026-04-07%20at%2018.56.19.jpeg"
+              alt="Gustavo Funo with his family"
+            />
+            <div class="photo-caption">
+              The people who made me — my family from Brazil 🇧🇷
+            </div>
+          </div>
+        </div>
+        <div class="photo-col fade-in" style="transition-delay: 0.15s">
+          <div class="photo-card">
+            <img
+              src="pictures/WhatsApp%20Image%202026-04-07%20at%2021.00.11.jpeg"
+              alt="Gustavo Funo with friends"
+            />
+            <div class="photo-caption">
+              My crew — the people who make every moment worth it 🤝
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title fade-in">Let's Connect</h2>
+      <p class="contact-sub fade-in">
+        Whether you have an internship opportunity, a project idea, or just want
+        to say hello — my inbox is always open.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-links fade-in">
+          <a href="mailto:gustavo.funo@gmail.com" class="contact-link">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-link-label">Email</p>
+              <p class="contact-link-value">gustavo.funo@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://github.com/gustavofuno" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon">💻</span>
+            <div>
+              <p class="contact-link-label">GitHub</p>
+              <p class="contact-link-value">github.com/gustavofuno</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/gustavo-souza-funo-54242a3b8" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon">🔗</span>
+            <div>
+              <p class="contact-link-label">LinkedIn</p>
+              <p class="contact-link-value">Gustavo Souza Funo</p>
+            </div>
+          </a>
+          <a href="https://instagram.com/gustavo_funo" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon">📸</span>
+            <div>
+              <p class="contact-link-label">Instagram</p>
+              <p class="contact-link-value">@gustavo_funo</p>
+            </div>
+          </a>
+        </div>
+        <form class="contact-form fade-in" id="contactForm" style="transition-delay: 0.15s">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Gustavo Funo &nbsp;·&nbsp; Built with passion from 🇧🇷 to 🇺🇸</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
