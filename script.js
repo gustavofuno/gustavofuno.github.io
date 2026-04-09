@@ -82,7 +82,7 @@ function updateActiveNav() {
 }
 
 /* === CONTACT FORM (EmailJS) === */
-emailjs.init('NFlcCmANEt_KRaS7e');
+emailjs.init('KKRR9-7QzYLP1MFy-');
 
 const contactForm = document.getElementById('contactForm');
 
