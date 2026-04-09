@@ -81,7 +81,9 @@ function updateActiveNav() {
   });
 }
 
-/* === CONTACT FORM === */
+/* === CONTACT FORM (EmailJS) === */
+emailjs.init('1NFlcCmANEt_KRaS7e');
+
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', e => {
@@ -90,18 +92,33 @@ contactForm.addEventListener('submit', e => {
   const btn          = contactForm.querySelector('button[type="submit"]');
   const originalText = btn.textContent;
 
-  btn.textContent       = '✓ Message Sent!';
-  btn.style.background  = '#10b981';
-  btn.style.boxShadow   = '0 8px 28px rgba(16,185,129,0.35)';
-  btn.disabled          = true;
+  btn.textContent = 'Sending…';
+  btn.disabled    = true;
 
-  setTimeout(() => {
-    btn.textContent      = originalText;
-    btn.style.background = '';
-    btn.style.boxShadow  = '';
-    btn.disabled         = false;
-    contactForm.reset();
-  }, 3200);
+  emailjs.sendForm('service_zs83lu9', 'template_w6xbxq8', contactForm)
+    .then(() => {
+      btn.textContent      = '✓ Message Sent!';
+      btn.style.background = '#10b981';
+      btn.style.boxShadow  = '0 8px 28px rgba(16,185,129,0.35)';
+
+      setTimeout(() => {
+        btn.textContent      = originalText;
+        btn.style.background = '';
+        btn.style.boxShadow  = '';
+        btn.disabled         = false;
+        contactForm.reset();
+      }, 3200);
+    })
+    .catch(() => {
+      btn.textContent      = '✗ Failed — try again';
+      btn.style.background = '#ef4444';
+      btn.disabled         = false;
+
+      setTimeout(() => {
+        btn.textContent      = originalText;
+        btn.style.background = '';
+      }, 3000);
+    });
 });
 
 /* === SKILL CARD — ripple hover effect === */
