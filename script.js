@@ -109,7 +109,8 @@ contactForm.addEventListener('submit', e => {
         contactForm.reset();
       }, 3200);
     })
-    .catch(() => {
+    .catch((err) => {
+      console.error('EmailJS error:', JSON.stringify(err));
       btn.textContent      = '✗ Failed — try again';
       btn.style.background = '#ef4444';
       btn.disabled         = false;
