@@ -169,17 +169,18 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .hero-image-col {
-  width: 40%;
+  width: 28%;
   flex-shrink: 0;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
 .hero-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  height: auto;
   display: block;
 }
 
