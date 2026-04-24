@@ -162,14 +162,14 @@ button { font-family: inherit; cursor: pointer; }
    ============================================================ */
 .hero {
   position: relative;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: stretch;
   overflow: hidden;
 }
 
 .hero-image-col {
-  width: 48%;
+  width: 50%;
   flex-shrink: 0;
   position: relative;
   display: flex;
@@ -189,7 +189,7 @@ button { font-family: inherit; cursor: pointer; }
   background: linear-gradient(150deg, var(--blue-dark) 0%, #0d2260 60%, #071540 100%);
   display: flex;
   align-items: center;
-  padding: 6rem 4rem;
+  padding: 7rem 4rem 6rem;
   position: relative;
 }
 
