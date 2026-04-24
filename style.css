@@ -169,7 +169,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .hero-image-col {
-  width: 34%;
+  width: 48%;
   flex-shrink: 0;
   position: relative;
   display: flex;
